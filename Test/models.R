@@ -5,6 +5,21 @@
 library(shiny)
 library(ggplot2)
 
+data = readxl::read_excel("model_data.xlsx")
+
+# Table with Main data, just department, num of models, emplyment total, and latest 2019 DEL
+table1 = data %>%
+  select("Department" = "Department...1", "Models" = "Number of business critical models", "Total", "DEL" = "2018-19...18")
+
+#Table 2 for use with shiny
+
+table2 = data %>%
+  dplyr::select("Department" = "Department...1", 
+                "Models" = "Number of business critical models", 
+                "DEL" = "2018-19...18",
+                c(4:9), 
+                "Total")
+
 ui <- fluidPage(navbarPage(title = "My Application",
             tabPanel("Description", mainPanel(fluidRow(includeMarkdown("sources.Rmd")))),
             tabPanel("Modelling Departments", 
