@@ -4,16 +4,18 @@
 This application explores the concentration of business critical models by department.
 
 ## Modelling Departments 
-This tab plots the distribution of models by department against analytical headcount. The idea is that departments with both a high concentration of models and a high headcount with have greater needs in terms of Quality Assurance of their models. The Size of the bubble plot is the department DEL. A department in the top tight quandrant with a large bubble will indcate departments to target. 
+This tab plots the distribution of models by department against analytical headcount. The idea is that departments with both a high concentration of models and a high headcount will have greater needs in terms of Quality Assurance of their models. The Size of the bubble plot is the department DEL. A department in the top right quadrant with a large bubble will indicate departments to target. 
+Models are those identified by MacPherson, see sources. The departments, and their ALBs, identified just fewer than 500 business critical
+models, so the value for models are the percentage of business critical models
 
 ## Distribution of Models by Department
-This tab repoduces chart 3.A, p.g 26, of the MacPeherson Report but with the departmental list I have used in the first tab for the analaysis. See later for more.
+This tab reproduces chart 3.A, p.g 26, of the MacPeherson Report but with the departmental list I have used in the first tab for the analysis. See later for more.
 
 ## Sources 
 
 * [MacPherson Report](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/206946/review_of_qa_of_govt_analytical_models_final_report_040313.pdf)
   - Percentage of Models by Department
-* Civil Service employment profession by government department 
+* Civil Service employment profession by government department 2017
  -  Available at [Civil Service statistics dataset](https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/publicsectorpersonnel/datasets/civilservicestatistics) 
   - table 8
   - Data for 2018
@@ -32,3 +34,13 @@ The departments that have been affect are
 * BEIS = BIS, DECC, CCC
 * Other = other, FSA, GAD
 Employment data for Other comes from FSA and GAD only, so this will under represent the employment count, perhaps significantly. This is due to now being able to disaggreate data supplied. 
+
+## Analysits
+* Economists
+* Statisticians
+* Digital, Data and Technology
+* Operational Research
+* Science and Engineering
+* Social Research
+
+The Analysis Function in Government listed 8 different [professional groups](https://www.gov.uk/government/collections/the-analysis-function-in-government). The data for employment is missing data on Actuary's and Scientists and Engineers are grouped together to give the six variables listed above. Total is the sum of these six.
