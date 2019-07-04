@@ -27,8 +27,8 @@ table2 = data %>%
   mutate(Total = Economists + Statisticians + Digital_Data_Technology + Operational_Research + Science_Engineering + Social_Research)
 
 
-ui <- fluidPage(navbarPage(title = "My Application",
-            tabPanel("Description", mainPanel(fluidRow(includeMarkdown("sources.Rmd")))),
+ui <- fluidPage(navbarPage(title = "Modelling Best Practice",
+            tabPanel("Details", mainPanel(fluidRow(includeMarkdown("sources.Rmd")))),
             tabPanel("Modelling Departments", 
               sidebarLayout(
                 sidebarPanel(
@@ -40,9 +40,9 @@ ui <- fluidPage(navbarPage(title = "My Application",
                                      "Digital, Data and Technology" = "Digital_Data_Technology",
                                      "Operational Research" = "Operational_Research",
                                      "Science and Engineering" = "Science_Engineering",
-                                     "Social_Research" = "Social Research"), selected = "Total"),
+                                     "Social Research" = "Social_Research"), selected = "Total"),
                       checkboxInput("checkbox", "Log", value = TRUE),
-                      radioButtons("ame", h3("Radio buttons"), 
+                      radioButtons("ame", h3("Public Sector Spending"), 
                                    choices = list("Real DEL" = "DEL_Real", 
                                                   "Real AME" = "AME_Real",
                                                   "Nominal DEL" = "DEL_Nominal",
